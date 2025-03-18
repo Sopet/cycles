@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Задача 1");
-        for (int i = 2; i <= 10; i = i + 2){
+        for (int i = 1; i <= 10; i++){
             System.out.println(i);
         }
 
@@ -27,7 +27,7 @@ public class Main {
 
         System.out.println("\nЗадача 5");
         for (int i = 1904; i <= 2096; i = i + 4){
-            System.out.println(i);
+            System.out.println(i + " год является високосным");
         }
 
 
@@ -56,7 +56,7 @@ public class Main {
         int salaryProcent = 29000;
         int totalProcent = 0;
         for (int month = 1; month <= 12; month++){
-            totalProcent = totalProcent + totalProcent/100;
+            totalProcent = totalProcent + salaryProcent/100;
             totalProcent = totalProcent + salaryProcent;
             System.out.println("Месяц " + month + ", сумма накоплений равна " + totalProcent + " рублей");
         }
